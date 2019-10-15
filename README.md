@@ -1,9 +1,10 @@
-# eslint-config-sec
+# :umbrella: eslint-config-sec
 Linting rules for safe and secure client code
 
-# Rules
-Extends `eslint-plugin-no-unsanitized` (see [docs](https://github.com/mozilla/eslint-plugin-no-unsanitized/tree/master/docs/rules))
+# Rules included
+Extends `eslint-plugin-no-unsanitized`, see [documentation](https://github.com/mozilla/eslint-plugin-no-unsanitized/tree/master/docs/rules).
 
+Additional rules:
 * `no-eval` - eval('evil code')
 * `no-implied-eval` - same as eval
 * `radix` - parseInt('12345', 10) without radix
@@ -11,11 +12,17 @@ Extends `eslint-plugin-no-unsanitized` (see [docs](https://github.com/mozilla/es
 * `no-new-func` - new Function('evil code')
 
 # Usage
+1. Install the config:
 
-Add this to `.eslintrc.js` file:
+```bash
 
-```js
+npm i -D eslint-config-sec
+```
+
+2. Add config to the `extends` section on your `.eslintrc.js` file:
+
+```diff
 "extends": [
-  "eslint-config-sec"
++  "eslint-config-sec"
 ]
 ```
