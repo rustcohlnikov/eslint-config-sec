@@ -1,11 +1,8 @@
 {
   "name": "eslint-config-sec",
   "version": "1.0.0",
-  "description": "Safe and secure frontend code",
+  "description": "Linting rules for safe and secure client code",
   "main": "index.js",
-  "scripts": {
-    "test": "npm run test"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/rustcohlnikov/eslint-config-sec.git"
@@ -30,7 +27,7 @@
     "fesec"
   ],
   "author": "Nazym Jumadilova",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/rustcohlnikov/eslint-config-sec/issues"
   },
